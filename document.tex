@@ -16,15 +16,15 @@
 
 % include metadata in the generated pdf file
 \pdfinfo{
-    /Title (The Occidental Computer Science Comprehensive Project: Goals, Timeline, Format, and Advice)
-    /Author (Justin Li)
+    /Title (Smart Blinds)
+    /Author (Maryo Botros)
 }
 
 % set the title and author information
-\title{The Occidental Computer Science Comprehensive Project: \\ Goals, Timeline, Format, and Advice}
-\author{Justin Li}
+\title{Smart Blinds}
+\author{Maryo Botros}
 \affiliation{Occidental College}
-\email{justinnhli@oxy.edu}
+\email{mbotros@oxy.edu}
 
 \begin{document}
 
@@ -127,18 +127,13 @@ We will spend more time on this in class, but you might consider the following p
 
 A list of past comps projects can be found online.\footnote{\url{https://www.oxy.edu/academics/areas-study/computer-science/past-senior-comps-projects}}
 
-\section{Interlude: Using \LaTeX}
+\section{Methods}
 
-LaTeX (pronounced \textit{lah-teck} or \textit{lay-teck}), often stylized as {\LaTeX} and written as latex, is a document markup language and typesetting system.
-Building on the {\TeX} language created by Donald Knuth in 1978, LaTeX provides additional commands for common document needs such as sections, figures, and bibliographies.
-LaTeX is widely used in academia, especially in mathematical fields, due to how easy it is to write mathematical equations and its automatic management of references.
-Since it is a markup language, LaTeX source files are written in plain text, which also makes it compatible with version control systems like git.
+\subsection{Sending Data From Arduino to Webpage}
 
-The most primitive syntax of LaTeX is the \textit{macro} or \textit{command}, which is always written with a backslash followed by the name of the command.
-The {\LaTeX} glyph, for example, can be created with the command \texttt{\textbackslash LaTeX}.
-Some commands take parameters, which are denoted in braces (e.g., \texttt{\textbackslash usepackage\{biblatex\}} will import the \texttt{biblatex} package), with some commands additionally accepting options in square brackets (e.g., \texttt{\textbackslash usepackage[style=numeric]\{biblatex\}}).
-The \texttt{\textbackslash begin} and \texttt{\textbackslash end} commands are special, as they indicate the start and end of an \textit{environment}.
-The content of a LaTeX document, for example, is surrounded by \texttt{\textbackslash begin\{document\}} and \texttt{\textbackslash end\{document\}}, indicating the text that should appear in the document.
+The goal of the first milestone is to successfully get Arduino to communicate with the frontend and then also program the Arduino to control a servo motor based on the amount of light that it receives. My first step is finding a way to get the Arduino to communicate with the frontend. After researching the different ways to accomplish this, I found that running the entire process through a Nodejs server would give me the best chance at success. The process for how the Arduino is able to communicate with the frontend through the Nodejs server is outlined in Figure 1. The Arduino sends and receives data to and from the server through the serialport. The frontend sends and receives data to and from the server through websockets. In this first case my plan is to write a program for the Arduino where I will activate a switch on the Arduino and when this switch is activated, it should change the color of a square on the webpage.
+
+The other goal is
 
 \begin{figure}
     \centering
