@@ -32,7 +32,7 @@
 
 \section{Introduction and Problem Context}
 
-Smart home technology has been developing rapidly, and many consumers have felt compelled to adopt this technology into their homes to help improve their way of living. This has especially been the case since the onslaught of the Covid-19 pandemic, when people have started to spend more time at home \cite{Ghosh2021SmartHomeDevice}. Examples of these tools include smart locks that can lock and unlock based on the user's location and smart lights that can turn on and off depending on whether or not a person is detected in a room. These devices often use automation in some capacity, to perform the tasks that humans normally would and are meant to enhance a user’s experience, while still fundamentally functioning the same way.
+Smart home technology has been developing rapidly, and many consumers have felt compelled to adopt this technology into their homes to help improve their way of living. This has especially been the case since the onset of the Covid-19 pandemic, when people have started to spend more time at home \cite{Ghosh2021SmartHomeDevice}. Examples of these tools include smart locks that can lock and unlock based on the user's location and smart lights that can turn on and off depending on whether or not a person is detected in a room. These devices often use automation in some capacity, to perform the tasks that humans normally would and are meant to enhance a user’s experience, while still fundamentally functioning the same way.
 
 Although this technology has gained more widespread adoption, there are still some areas of smart home technology that have yet to see development, namely, window blinds There are currently no mainstream smart home technology manufacturers that produce automated window blinds and yet blinds have great potential for improvement with automation. Blinds may seem simple because they are either opened or closed, but the ways people interact with them can be quite nuanced and reveal that automating blinds can bring significant improvements. Firstly, blinds can be automated to function as natural alarm clocks, automatically opening when the sun comes up. They can also be automated to automatically close when the sun sets, functioning as a privacy tool, as this is a time when people outside can see through a window. They can be automated to close at high temperatures to keep indoor temperatures cooler, which can save energy. Automated blinds can also allow a user to monitor their blinds remotely from an app, offering peace of mind. Additionally, automated blinds can be beneficial as an accessibility tool for users, especially those with disabilities who may have difficulties adjusting blinds according to their needs. Based on all of these use cases, there does exist a need for automating blinds.
 
@@ -96,11 +96,7 @@ There are many similar smart home-related projects that others have made using A
 
 \section{Methods}
 
-\subsection{Sending Data From Arduino to Webpage}
-
-The goal of the first milestone is to successfully get Arduino to communicate with the frontend and then also program the Arduino to control a servo motor based on the amount of light that it receives. My first step is finding a way to get the Arduino to communicate with the frontend. After researching the different ways to accomplish this, I found that running the entire process through a Nodejs server would give me the best chance at success. The process for how the Arduino is able to communicate with the frontend through the Nodejs server is outlined in Figure 1. The Arduino sends and receives data to and from the server through the serialport. The frontend sends and receives data to and from the server through websockets. In this first case my plan is to write a program for the Arduino where I will activate a switch on the Arduino and when this switch is activated, it should change the color of a square on the webpage.
-
-The other goal is
+\section{Stuff}
 
 
 Beyond the basic syntax, much of learning LaTeX is learning the different commands and environments that exist.
@@ -108,7 +104,6 @@ For example, text can be made \textbf{bold} with \texttt{\textbackslash textbf},
 Single dollar signs denote inline equations, so \texttt{\$E = mc \textasciicircum 2\$} will be rendered as $E = mc^2$.
 Double dollar signs will render the equation in display mode, which we can see with the quadratic formula:
 
-$$\frac{{-b \pm \sqrt {b^2 - 4ac} }}{{2a}}$$
 
 There are also a handful of common environments:
 
@@ -120,15 +115,7 @@ There are also a handful of common environments:
     \item \texttt{lstlisting} for code listings (see Listing \ref{lst:python-hello-world})
 \end{itemize}
 
-\begin{lstlisting}[
-    language=Python,
-    caption={Hello, World! in Python},
-    label={lst:python-hello-world},
-    float
-]
-def hello():
-    print('hello, world!')
-\end{lstlisting}
+
 
 This covers the most frequently used commands, but as you might have already inferred, LaTeX is a vast and deep system, and can easily be overwhelming.
 We recommended reading through the \citetitle{Overleaf2021LearnLaTeXIn} tutorial \cite{Overleaf2021LearnLaTeXIn} and using the \citetitle{WikiBook2022LaTeX} \cite{WikiBook2022LaTeX} as reference.
