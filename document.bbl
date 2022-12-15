@@ -129,6 +129,33 @@
       \verb https://www.investopedia.com/terms/s/smart-home.asp
       \endverb
     \endentry
+    \entry{Hunter2021Buggy}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8c0eaf18fa4e343256255cc2dc23fe5e}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={Tatum},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c0eaf18fa4e343256255cc2dc23fe5e}
+      \strng{fullhash}{8c0eaf18fa4e343256255cc2dc23fe5e}
+      \strng{bibnamehash}{8c0eaf18fa4e343256255cc2dc23fe5e}
+      \strng{authorbibnamehash}{8c0eaf18fa4e343256255cc2dc23fe5e}
+      \strng{authornamehash}{8c0eaf18fa4e343256255cc2dc23fe5e}
+      \strng{authorfullhash}{8c0eaf18fa4e343256255cc2dc23fe5e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Buggy software in off-brand smart home devices is a hacker’s playground}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.washingtonpost.com/technology/2021/11/18/smart-home-security/
+      \endverb
+      \verb{url}
+      \verb https://www.washingtonpost.com/technology/2021/11/18/smart-home-security/
+      \endverb
+    \endentry
     \entry{Jang2014ToStayCool}{article}{}
       \name{author}{1}{}{%
         {{hash=2e19af2683accaf5dfb624e05cd6d9b3}{%
@@ -252,6 +279,65 @@
       \verb https://www.instructables.com/Remote-Control-Light-Switch-1/
       \endverb
     \endentry
+    \entry{Muller2015Designing}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=37125c581267de9727dd315f26b1c283}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=980ad22fbd02676de4d3944ae1521cd6}{%
+           family={Sedley},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{14bb884bc52d50a6181758ab5fe8eae1}
+      \strng{fullhash}{14bb884bc52d50a6181758ab5fe8eae1}
+      \strng{bibnamehash}{14bb884bc52d50a6181758ab5fe8eae1}
+      \strng{authorbibnamehash}{14bb884bc52d50a6181758ab5fe8eae1}
+      \strng{authornamehash}{14bb884bc52d50a6181758ab5fe8eae1}
+      \strng{authorfullhash}{14bb884bc52d50a6181758ab5fe8eae1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Designing Surveys for HCI Research}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://research.google/research-areas/human-computer-interaction-and-visualization/
+      \endverb
+      \verb{url}
+      \verb https://research.google/research-areas/human-computer-interaction-and-visualization/
+      \endverb
+    \endentry
+    \entry{Panchwagh7Ways}{article}{}
+      \name{author}{1}{}{%
+        {{hash=84efbe5524b005f9181484fd2a363916}{%
+           family={Panchwagh},
+           familyi={P\bibinitperiod},
+           given={Pranoti},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{84efbe5524b005f9181484fd2a363916}
+      \strng{fullhash}{84efbe5524b005f9181484fd2a363916}
+      \strng{bibnamehash}{84efbe5524b005f9181484fd2a363916}
+      \strng{authorbibnamehash}{84efbe5524b005f9181484fd2a363916}
+      \strng{authornamehash}{84efbe5524b005f9181484fd2a363916}
+      \strng{authorfullhash}{84efbe5524b005f9181484fd2a363916}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{7 Ways Smart Homes and Smart Devices Can Help People With Disabilities}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.makeuseof.com/ways-smart-homes-devices-help-people-with-disabilities/
+      \endverb
+      \verb{url}
+      \verb https://www.makeuseof.com/ways-smart-homes-devices-help-people-with-disabilities/
+      \endverb
+    \endentry
     \entry{SwitchBot2022}{misc}{}
       \name{author}{1}{}{%
         {{hash=2ab9fff71404e80df85ba5c1f9f7acf7}{%
@@ -289,7 +375,6 @@
       \strng{authorbibnamehash}{3bdbf67e6055bb9eb87f2707868ff337}
       \strng{authornamehash}{3bdbf67e6055bb9eb87f2707868ff337}
       \strng{authorfullhash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -304,33 +389,59 @@
       \verb https://www.youtube.com/watch?v=nZX96p09qtg
       \endverb
     \endentry
+    \entry{Tan2016HCI}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3a650e30fa5fc1ba2e1cd21235ae9f79}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={CH.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a650e30fa5fc1ba2e1cd21235ae9f79}
+      \strng{fullhash}{3a650e30fa5fc1ba2e1cd21235ae9f79}
+      \strng{bibnamehash}{3a650e30fa5fc1ba2e1cd21235ae9f79}
+      \strng{authorbibnamehash}{3a650e30fa5fc1ba2e1cd21235ae9f79}
+      \strng{authornamehash}{3a650e30fa5fc1ba2e1cd21235ae9f79}
+      \strng{authorfullhash}{3a650e30fa5fc1ba2e1cd21235ae9f79}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{HCI Testing in Laboratory or Field Settings}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-319-39399-5_11#Sec4
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-319-39399-5_11#Sec4
+      \endverb
+    \endentry
     \entry{Thomas2020Communicating}{misc}{}
       \name{author}{1}{}{%
-        {{hash=3bdbf67e6055bb9eb87f2707868ff337}{%
-           family={Tamayo},
+        {{hash=7d7a4ea682e2b0eddafbab3ec7f3abfd}{%
+           family={Thomas},
            familyi={T\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod}}}%
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \strng{fullhash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \strng{bibnamehash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \strng{authorbibnamehash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \strng{authornamehash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \strng{authorfullhash}{3bdbf67e6055bb9eb87f2707868ff337}
-      \field{extraname}{2}
+      \strng{namehash}{7d7a4ea682e2b0eddafbab3ec7f3abfd}
+      \strng{fullhash}{7d7a4ea682e2b0eddafbab3ec7f3abfd}
+      \strng{bibnamehash}{7d7a4ea682e2b0eddafbab3ec7f3abfd}
+      \strng{authorbibnamehash}{7d7a4ea682e2b0eddafbab3ec7f3abfd}
+      \strng{authornamehash}{7d7a4ea682e2b0eddafbab3ec7f3abfd}
+      \strng{authorfullhash}{7d7a4ea682e2b0eddafbab3ec7f3abfd}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{video}
-      \field{title}{Smart Home Tech I Actually Use | Form and Function}
-      \field{year}{2022}
+      \field{title}{Communicating from an Arduino to an HTML/JavaScript Webpage}
+      \field{year}{2020}
       \verb{urlraw}
-      \verb https://www.youtube.com/watch?v=nZX96p09qtg
+      \verb https://www.youtube.com/watch?v=gQYsUjT-IBo&t=43s
       \endverb
       \verb{url}
-      \verb https://www.youtube.com/watch?v=nZX96p09qtg
+      \verb https://www.youtube.com/watch?v=gQYsUjT-IBo&t=43s
       \endverb
     \endentry
     \entry{Woodall2021Popular}{article}{}
@@ -362,9 +473,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Fiztgerald2015Arduino}
-  \missing{Muler2016Designing}
-  \missing{Tran2016}
 \endrefsection
 \endinput
 

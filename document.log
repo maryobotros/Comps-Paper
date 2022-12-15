@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.1)  14 DEC 2022 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.1)  15 DEC 2022 11:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -537,29 +537,7 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'document.bbl' found.
- (/Users/maryobotros/Desktop/Comps-Paper/document.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Fiztgerald2015Arduino
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Muler2016Designing
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Tran2016
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (/Users/maryobotros/Desktop/Comps-Paper/document.bbl)
 Package biblatex Info: Reference section=0 on input line 29.
 Package biblatex Info: Reference segment=0 on input line 29.
 Package caption Info: Begin \AtBeginDocument code.
@@ -627,23 +605,23 @@ Package pdftex.def Info: Figure 1.png  used on input line 57.
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
  [2 </Users/maryobotros/Desktop/Comps-Paper/Figure 1.png>] [3]
-<Figure 2.png, id=226, 560.0925pt x 533.995pt>
+<Figure 2.png, id=227, 560.0925pt x 533.995pt>
 File: Figure 2.png Graphic file (type png)
 <use Figure 2.png>
 Package pdftex.def Info: Figure 2.png  used on input line 106.
 (pdftex.def)             Requested size: 225.27841pt x 214.78383pt.
  [4]
-<Figure 3.png, id=235, 836.12375pt x 353.32pt>
+<Figure 3.png, id=238, 836.12375pt x 353.32pt>
 File: Figure 3.png Graphic file (type png)
 <use Figure 3.png>
 Package pdftex.def Info: Figure 3.png  used on input line 119.
 (pdftex.def)             Requested size: 225.27841pt x 95.19281pt.
-<Figure 4.png, id=237, 548.0475pt x 532.99126pt>
+<Figure 4.png, id=240, 548.0475pt x 532.99126pt>
 File: Figure 4.png Graphic file (type png)
 <use Figure 4.png>
 Package pdftex.def Info: Figure 4.png  used on input line 133.
 (pdftex.def)             Requested size: 225.27841pt x 219.08899pt.
-<Figure 5.png, id=238, 830.10126pt x 636.3775pt>
+<Figure 5.png, id=241, 830.10126pt x 636.3775pt>
 File: Figure 5.png Graphic file (type png)
 <use Figure 5.png>
 Package pdftex.def Info: Figure 5.png  used on input line 142.
@@ -653,92 +631,105 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 15
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [6 </Users/maryobotros/Desktop/Comps-Paper/Figure 4.png> </Users/maryobotros/Desktop/Comps-Paper/Figure 5.png>]
-<Figure 6.png, id=259, 572.1375pt x 543.02875pt>
+<Figure 6.png, id=262, 572.1375pt x 543.02875pt>
 File: Figure 6.png Graphic file (type png)
 <use Figure 6.png>
 Package pdftex.def Info: Figure 6.png  used on input line 186.
 (pdftex.def)             Requested size: 225.27841pt x 213.8187pt.
-<Figure 7.png, id=260, 438.63875pt x 145.54375pt>
+<Figure 7.png, id=263, 438.63875pt x 145.54375pt>
 File: Figure 7.png Graphic file (type png)
 <use Figure 7.png>
 Package pdftex.def Info: Figure 7.png  used on input line 197.
 (pdftex.def)             Requested size: 225.27841pt x 74.75043pt.
  [7] [8 </Users/maryobotros/Desktop/Comps-Paper/Figure 6.png> </Users/maryobotros/Desktop/Comps-Paper/Figure 7.png>]
-<Figure 8.png, id=274, 856.19875pt x 600.2425pt>
+<Figure 8.png, id=277, 856.19875pt x 600.2425pt>
 File: Figure 8.png Graphic file (type png)
 <use Figure 8.png>
 Package pdftex.def Info: Figure 8.png  used on input line 238.
 (pdftex.def)             Requested size: 225.27841pt x 157.9278pt.
- [9 </Users/maryobotros/Desktop/Comps-Paper/Figure 8.png>] [10]
-Underfull \hbox (badness 6808) in paragraph at lines 307--307
+ [9 </Users/maryobotros/Desktop/Comps-Paper/Figure 8.png>] [10] [11]
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 314--315
+[]\OT1/ptm/m/n/10 In con-clu-sion, this project re-vealed that au-tomat-ing
+ []
+
+
+Underfull \hbox (badness 6808) in paragraph at lines 319--319
 []\OT1/ptm/m/n/10 Bradford, Alina. ``8 Best Smart Blinds''. In:
  []
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 307--307
+Underfull \hbox (badness 2351) in paragraph at lines 319--319
 \OT1/ptm/m/it/10 Fam-ily Handy-man \OT1/ptm/m/n/10 (2022). \OT1/ptm/m/sc/10 url\OT1/ptm/m/n/10 : []$\OT1/pcr/m/n/10 https : / /
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 307--307
+Underfull \hbox (badness 4819) in paragraph at lines 319--319
 \OT1/pcr/m/n/10 www . familyhandyman . com / list /
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 307--307
+Underfull \hbox (badness 1735) in paragraph at lines 319--319
 \OT1/pcr/m/n/10 best -[] smart -[] blinds / # : [] : text =
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 307--307
+Underfull \hbox (badness 1776) in paragraph at lines 319--319
 \OT1/pcr/m/n/10 Smart % 20blinds % 20are % 20window %
  []
 
-[11]
-Underfull \hbox (badness 1571) in paragraph at lines 307--307
+[12]
+Underfull \hbox (badness 1571) in paragraph at lines 319--319
 []\OT1/ptm/m/n/10 Lab, Won-der Tech. \OT1/ptm/m/it/10 Switch-Bot Blind Tilt, solar-
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 307--307
+Underfull \hbox (badness 2573) in paragraph at lines 319--319
 \OT1/pcr/m/n/10 solar -[] powered -[] retrofit -[] smart -[]
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 307--307
+Underfull \hbox (badness 4229) in paragraph at lines 319--319
+[]\OT1/ptm/m/n/10 Muller, H. and Sed-ley, A. \OT1/ptm/m/it/10 De-sign-ing Sur-veys
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 319--319
+\OT1/ptm/m/it/10 for HCI Re-search\OT1/ptm/m/n/10 . 2015. \OT1/ptm/m/sc/10 url\OT1/ptm/m/n/10 : []$\OT1/pcr/m/n/10 https : / /
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 319--319
 \OT1/pcr/m/n/10 / / www . youtube . com / watch ? v =
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 307--307
-\OT1/pcr/m/n/10 / / www . youtube . com / watch ? v =
- []
-
-
-Underfull \hbox (badness 6364) in paragraph at lines 307--307
+Underfull \hbox (badness 6364) in paragraph at lines 319--319
 \OT1/ptm/m/n/10 De-vices 2022''. In: \OT1/ptm/m/it/10 Re-views.org \OT1/ptm/m/n/10 (2021). \OT1/ptm/m/sc/10 url\OT1/ptm/m/n/10 :
  []
 
-[12] (/Users/maryobotros/Desktop/Comps-Paper/document.aux)
+[13] (/Users/maryobotros/Desktop/Comps-Paper/document.aux)
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 5A294A21ACCD0413A1A346DFB34961A6;8702.
+(rerunfilecheck)             Checksum: 0EF38EC8B685A7529447A67C99DC3164;8708.
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19570 strings out of 478994
- 330153 string characters out of 5858185
- 1048360 words of memory out of 5000000
- 36732 multiletter control sequences out of 15000+600000
+ 19582 strings out of 478994
+ 330612 string characters out of 5858185
+ 1048492 words of memory out of 5000000
+ 36739 multiletter control sequences out of 15000+600000
  424320 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,8n,89p,1972b,1316s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,8n,89p,1972b,1319s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/maryobotros/Desktop/Comps-Paper/document.pdf (12 pages, 555278 bytes).
+Output written on /Users/maryobotros/Desktop/Comps-Paper/document.pdf (13 pages, 563469 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
  377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

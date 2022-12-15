@@ -1,19 +1,15 @@
-[1] Config.pm:311> INFO - This is Biber 2.16
-[1] Config.pm:314> INFO - Logfile is 'document.blg'
-[115] biber-darwin:340> INFO - === Wed Dec 14, 2022, 23:49:40
-[142] Biber.pm:415> INFO - Reading 'document.bcf'
-[277] Biber.pm:952> INFO - Found 16 citekeys in bib section 0
-[295] Biber.pm:4340> INFO - Processing section 0
-[315] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[316] bibtex.pm:1689> INFO - LaTeX decoding ...
-[331] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[421] Utils.pm:395> WARN - I didn't find a database entry for 'Fiztgerald2015Arduino' (section 0)
-[421] Utils.pm:395> WARN - I didn't find a database entry for 'Tran2016' (section 0)
-[421] Utils.pm:395> WARN - I didn't find a database entry for 'Muler2016Designing' (section 0)
-[449] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[449] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[449] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[449] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[470] bbl.pm:654> INFO - Writing 'document.bbl' with encoding 'UTF-8'
-[478] bbl.pm:757> INFO - Output to document.bbl
-[478] Biber.pm:128> INFO - WARNINGS: 3
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'document.blg'
+[119] biber-darwin:340> INFO - === Thu Dec 15, 2022, 10:59:06
+[143] Biber.pm:415> INFO - Reading 'document.bcf'
+[283] Biber.pm:952> INFO - Found 17 citekeys in bib section 0
+[303] Biber.pm:4340> INFO - Processing section 0
+[324] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[326] bibtex.pm:1689> INFO - LaTeX decoding ...
+[348] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[496] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[496] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[496] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[496] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[525] bbl.pm:654> INFO - Writing 'document.bbl' with encoding 'UTF-8'
+[535] bbl.pm:757> INFO - Output to document.bbl
