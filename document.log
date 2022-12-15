@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.1)  15 DEC 2022 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.1)  15 DEC 2022 12:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,7 +633,10 @@ Underfull \vbox (badness 1708) has occurred while \output is active []
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 157.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [6 </Users/maryobotros/Desktop/Comps-Paper/Figure 5.png>]
+)
+Underfull \vbox (badness 2310) has occurred while \output is active []
+
+ [6 </Users/maryobotros/Desktop/Comps-Paper/Figure 5.png>]
 <Figure 6.png, id=261, 572.1375pt x 543.02875pt>
 File: Figure 6.png Graphic file (type png)
 <use Figure 6.png>
@@ -644,16 +647,16 @@ File: Figure 7.png Graphic file (type png)
 <use Figure 7.png>
 Package pdftex.def Info: Figure 7.png  used on input line 197.
 (pdftex.def)             Requested size: 225.27841pt x 74.75043pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [7 </Users/maryobotros/Desktop/Comps-Paper/Figure 6.png>] [8 </Users/maryobotros/Desktop/Comps-Paper/Figure 7.png>]
 <Figure 8.png, id=276, 856.19875pt x 600.2425pt>
 File: Figure 8.png Graphic file (type png)
 <use Figure 8.png>
 Package pdftex.def Info: Figure 8.png  used on input line 238.
 (pdftex.def)             Requested size: 225.27841pt x 157.9278pt.
- [9 </Users/maryobotros/Desktop/Comps-Paper/Figure 8.png>] [10] [11]
+ [9 </Users/maryobotros/Desktop/Comps-Paper/Figure 8.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10] [11]
 Underfull \hbox (badness 1342) in paragraph at lines 314--315
 []\OT1/ptm/m/n/10 In con-clu-sion, this project re-vealed that au-tomat-ing
  []
@@ -725,13 +728,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 Here is how much of TeX's memory you used:
  19582 strings out of 478994
  330612 string characters out of 5858185
- 1050492 words of memory out of 5000000
+ 1051342 words of memory out of 5000000
  36739 multiletter control sequences out of 15000+600000
  424320 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,8n,89p,1949b,1319s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,8n,89p,1949b,1311s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/maryobotros/Desktop/Comps-Paper/document.pdf (13 pages, 563087 bytes).
+Output written on /Users/maryobotros/Desktop/Comps-Paper/document.pdf (13 pages, 562921 bytes).
 PDF statistics:
  396 PDF objects out of 1000 (max. 8388607)
  357 compressed objects within 4 object streams
