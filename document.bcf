@@ -2367,11 +2367,17 @@
     <bcf:citekey order="21">WonderTechLab2022SwitchBot</bcf:citekey>
     <bcf:citekey order="22">MerrittRemoteControlLightSwitch</bcf:citekey>
     <bcf:citekey order="23">MerrittRemoteControlLightSwitch</bcf:citekey>
-    <bcf:citekey order="24">Overleaf2021LearnLaTeXIn</bcf:citekey>
-    <bcf:citekey order="25">Overleaf2021LearnLaTeXIn</bcf:citekey>
-    <bcf:citekey order="26">WikiBook2022LaTeX</bcf:citekey>
-    <bcf:citekey order="27">WikiBook2022LaTeX</bcf:citekey>
-    <bcf:citekey order="28">Lambert2021MakefileTutorial</bcf:citekey>
+    <bcf:citekey order="24">Knight2018ConnectingArduino</bcf:citekey>
+    <bcf:citekey order="25">Knight2018ConnectingArduino</bcf:citekey>
+    <bcf:citekey order="26">Fiztgerald2015Arduino</bcf:citekey>
+    <bcf:citekey order="27">Fiztgerald2015Arduino</bcf:citekey>
+    <bcf:citekey order="28">Fiztgerald2015Arduino</bcf:citekey>
+    <bcf:citekey order="29">Jang2014ToStayCool</bcf:citekey>
+    <bcf:citekey order="30">Tamayo2022SmartHome</bcf:citekey>
+    <bcf:citekey order="31">Fitzgerald2015Arduino</bcf:citekey>
+    <bcf:citekey order="32">Tran2016</bcf:citekey>
+    <bcf:citekey order="33">Muler2016Designing</bcf:citekey>
+    <bcf:citekey order="34">Muler2016Designing</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

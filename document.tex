@@ -58,7 +58,7 @@ The robot for this project will be developed using an Arduino microcontroller. A
     \caption{
         Architecture overview for the project.
     }
-    \label{fig:first-page}
+    \label{fig:fig1}
 \end{figure}
 
 \subsection{Robot}
@@ -95,129 +95,213 @@ There are many similar smart home-related projects that others have made using A
 
 
 \section{Methods}
+\subsection{Using Light and Temperature to Affect Blinds}
+\subsubsection{Sending Data from Arduino to Webpage}
+Before programming anything, I had to find a way to pass information between an Arduino and a webpage. After researching this topic, I found that there was no way to directly communicate between an Arduino and a webpage, but it is possible to do it using a Node.js server to pass information between the two. According to creative technologist and developer, Indira Knight, Node.js works really well with Arduinos. Using the serial port you can use the server to pass data from an Arduino to a web page and pass data from the web to an Arduino \cite{Knight2018ConnectingArduino}. Node.js is a runtime environment for executing JavaScript server code and it makes it possible to create routes to web pages, connect to localhost, connect to a database, and send data to web pages with JavaScript \cite{Knight2018ConnectingArduino}. Figure 1 shows  the architecture for the process using Node.js.
 
-\section{Stuff}
+Once I knew that it was possible to pass data back and forth between an Arduino and a webpage I wanted to make a robot that would automate blinds in response to light, so that the blinds could open in the morning when the sun came up, to function as a natural alarm clock, and close at night, to increase privacy. I also wanted the webpage to display the current angle of the servo motor. The SwitchBot blinds also incorporated a light sensor to automate the blinds to  open and close in the same way. In order to do this I would have to program the Arduino to move a servo motor based on light levels in a room and then send the status of the servo motor to be displayed on the webpage. My first step was to put together the circuit. The components that are required for the circuit will be the Arduino Uno, a breadboard, a servo motor, a phototransistor, a 220-ohm resistor, and jumper cables. Figure 2 shows the circuit, with the phototransistor connected to analog port A1. The servo motor is connected to digital pin 9. These are the ports that allow the Arduino microcontroller to communicate with the phototransistor and servo motor. Energy moves from the power to ground on the breadboard and in the process, power is sent through to all the components on the breadboard. The breadboard is used in electronics for prototyping; it is a way to attach components to an Arduino without soldering \cite{Fiztgerald2015Arduino}. The phototransistor is the sensor that is used here to get data on light levels in a room. The servo motor only moves 180 degrees, where when the motor has turned the complete 180 degrees, this would move the blinds to a completely open position and when the servo is turned to 0 degrees, this would move the blinds to a completely closed position. 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 2.png}
+    \caption{
+        Arduino circuit with phototransistor and servo motor
+    }
+    \label{fig:fig2}
+\end{figure}
 
-Beyond the basic syntax, much of learning LaTeX is learning the different commands and environments that exist.
-For example, text can be made \textbf{bold} with \texttt{\textbackslash textbf}, \textit{italic} with \texttt{\textbackslash textit}, and \texttt{monospaced} with \texttt{\textbackslash texttt} (the \texttt{tt} stands for for ``teletype'').
-Single dollar signs denote inline equations, so \texttt{\$E = mc \textasciicircum 2\$} will be rendered as $E = mc^2$.
-Double dollar signs will render the equation in display mode, which we can see with the quadratic formula:
+After putting the circuit together, I wanted the blinds to completely open if light was sensed and close if there was no light. This would mean that if the phototransistor picked up light levels that were equal to or above a certain threshold, then the servo motor should move to 180 degrees and if it did not, then the servo would move to 0 degrees. After programming and then testing this out, I found out that it worked effectively. 
 
+I next wanted to send the status of the servo motor to the webpage and display the angle there. As shown in Figure 1 the way that data is sent from the Arduino to the Node.js server is using the serial port. Data that is sent through the serial port can be seen in the serial monitor which enables me to report back results from the microcontroller like a console \cite{Fiztgerald2015Arduino}. The serial monitor is a great way to get information about the status of sensors and get an idea about what is happening on the circuit and the code as it runs \cite{Fiztgerald2015Arduino}. It is also how I can view what information is being passed from the Arduino to the webpage over the serial port. I added print statements to the serial monitor that indicated the angle of the servo. Figure 3 shows the serial monitor outputting the angle of the servo as it changes when light is shined on the robot and then when it is no longer shining on it. 
 
-There are also a handful of common environments:
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 3.png}
+    \caption{
+        Serial monitor showing servo's angle changing from 0 to 180 and back to 0 again in reponse to changing light in the environment.
+    }
+    \label{fig:fig3}
+\end{figure}
+
+\subsubsection*{Sending Data From Webpage to Arduino}
+I next wanted to test out sending data from the web page to the Arduino and in the process of doing this, I would also add a way to automate the blinds using temperature. I wanted to add two buttons to the webpage which would each select a mode. One mode would use the light sensor to automate the blinds based on light, and the other mode would automate the blinds based on temperature. Temperature is one of the methods I am using to automate the blinds because it can help keep a room cooler and save on energy costs when the blinds are closed at higher temperatures \cite{Jang2014ToStayCool}.
+
+I began by adding a temperature sensor to the circuit. The specific sensor that was used is a tmp36 sensor, which has three prongs for a connection to power, ground, and the analog voltage, which is connected to analog pin A5, as can be seen in Figure 4. Once the circuit was put together, I next moved on to testing the sensor. The program written for testing the temperature sensor read the analog value of the temperature sensor and outputted it to the serial monitor. Testing the temperature sensor proved to be slightly more challenging than testing the phototransistor because it is harder to change the ambient temperature than it is to change ambient lightning. The way I was able to change ambient temperature was by directing a fan toward the sensor to make the temperature cooler and directing a heater toward it to make the temperature warmer. This method showed that the tmp36 sensor did pick up on the changes in temperature and Figure 5 shows the sensor’s readings on the serial monitor.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 4.png}
+    \caption{
+        Arduino circuit with the addition of the tmp36 temperature sensor.
+    }
+    \label{fig:fig4}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 5.png}
+    \caption{
+        Serial monitor showing temperature changing as I briefly direct a heater at the sensor. Figure also shows servo moving to an open (180 degrees) and closed position (0 degrees) based on a temperature threshold set at 70 degrees Farenheit.
+    }
+    \label{fig:fig5}
+\end{figure}
+
+For the second part of testing the temperature sensor, I wanted to use the temperature sensor in a similar way I used the phototransistor to affect the servo motor. I wrote the program so that the servo would move to 0 degrees if the temperature reached 90 degrees Fahrenheit or greater and would move to 180 degrees if the temperature was less than 90 degrees Fahrenheit. I used this threshold for testing purposes. This would mean that the blinds would be closed if the temperature reached 90 degrees or greater and would be closed otherwise.
+
+At this stage, there were now two different ways of autonomously opening and closing the blinds: using temperature and light The next step is giving the user the ability to choose between these two methods of affecting the blinds through the webpage. On the webpage, I added the two buttons, labeled “Light Mode'' and “Temperature Mode.” When the user clicks one of these buttons, it sends a unique code to the Arduino using socket.io, indicating to it the appropriate function that should be executed: the function that uses the phototransistor to autonomously affect the servo or the function that uses the temperature sensor to autonomously affect the servo. 
+
+\subsection{User Testing Round 1}
+Once I got two modes working for the robot, light mode, and temperature mode, it was an appropriate time to conduct the first round of user testing to receive feedback. The way this was conducted was by taking a group of four individuals and explaining the goal of the project. Each user was then given 10 to 15 minutes to interact with the robot and website and then respond to a few open-ended questions as well as questions asking about potential features, that would gauge what worked and what didn’t work with the project so far, as well as what could be done moving forward. The organized responses to these questions can be found in UserTestingAndEvaluation.pdf. The questions are listed below:
 
 \begin{itemize}
-    \item \texttt{itemize} for bulletpoint lists
-    \item \texttt{enumerate} for numbered lists
-    \item \texttt{figure} for figures (see Figure \ref{fig:first-page})
-    \item \texttt{table} and \texttt{tabular} for tables (see Table \ref{tbl:timeline})
-    \item \texttt{lstlisting} for code listings (see Listing \ref{lst:python-hello-world})
+    \item \texttt What are some of the pain-points of the project so far?
+    \item \texttt What do you like about the project?
+    \item \texttt Are you more likely to use a combination of light and temperature to automate blinds or would you just use one or the other?
+    \item \texttt Is it important for you to see the status of the blinds?
 \end{itemize}
 
+\subsubsection{What users liked}
+The results showed that all users were satisfied with the use of temperature and light to autonomously control the blinds. However, all users stated that they were more likely to combine temperature and light rather than exclusively use one or the other. This reveals that adding modes that possibly apply boolean logic to the temperature and light sensors will be a change that will have to be made.
 
+\subsubsection{Need for status information on website}
+All users pointed out that they wanted to have access to information about the status of the blinds, to see whether they were opened or closed. The only thing that was displayed at this stage was the angle of the servo, which was not very useful information for the user. Therefore, instead of sending 180 degrees or 0 degrees to be displayed on the website, I should be sending “open” or “closed.” The motorized blinds as well as the SwitchBot blinds that were mentioned in the prior work also displayed the status of the blinds on their apps and this was already a feature I planned on implementing. To take this further, another important piece of information that can be displayed on the webpage as well could be the mode that is currently being used.
 
-This covers the most frequently used commands, but as you might have already inferred, LaTeX is a vast and deep system, and can easily be overwhelming.
-We recommended reading through the \citetitle{Overleaf2021LearnLaTeXIn} tutorial \cite{Overleaf2021LearnLaTeXIn} and using the \citetitle{WikiBook2022LaTeX} \cite{WikiBook2022LaTeX} as reference.
-Beyond that, you should examine and play with the source of this document to gain working proficiency with LaTeX.
+\subsubsection{Pain Point: Lack of manual control}
+Several users pointed out that having the robot attached to the blinds took away their ability to manually control the blinds themselves. Users wanted to have that ability to bring back the physical twisting of the wand. Using this feedback I now know will need to add something that will give the user back the ability to manually control the blinds. The best smart home devices are the ones that enhance the user’s experience, without fundamentally altering the way they interact with the appliance or tool \cite{Tamayo2022SmartHome}. Although I had now enhanced the functionality of the blinds, making them operate autonomously based on light and temperature, I had removed the option to make manual adjustments. This is how users were accustomed to operating their blinds and therefore, this functionality needed to be brought back.
 
-One final note on writing in LaTeX.
-Since LaTeX is only a markup language, the source files must be compiled into a viewable form, most commonly into a PDF file.
-The source of this document is made up of several files, each with its own purpose:
+\subsection{Improvements After User Testing Round 1}
+\subsubsection{4.3.1 Adding boolean logic modes}
+Using what I had learned from the first round of user testing, I began by making the necessary improvements, starting with adding options for the user to apply boolean logic to customize the automation with the temperature and light sensor. To do this, I added two more buttons on the webpage for the two new modes. One of the modes will be denoted as “Temperature or Phototransistor.” When this mode is used, the blinds will open if either the temperature is greater than 90 degrees Fahrenheit or the phototransistor senses light. The second mode will be denoted as “Temperature and Phototransistor.” When this mode is used, the blinds will only open if both the temperature is greater than or equal to 90 degrees Fahrenheit and the phototransistor senses light. At this stage, there are now four modes: Temperature, Light, Temperature or Light, and Temperature and Light.
+
+\subsubsection{Adding status indicators}
+The next improvement after the first round of user testing is adding a status indicator on the webpage. This status indicator would be an area on the webpage that would let the user know which mode the robot is currently in. Instead of having the webpage display the angle of the servo motor, it would instead indicate “Status: Open” or “Status: Closed,” to let the user view the status of the blinds remotely. I added to this by also including the current mode that was selected by the user. With these additions, the webpage now gives the user information on the mode of automation and the status of the blinds.
+
+\subsubsection{Adding a potentiometer mode}
+The final improvement that has to be made after the first round of user testing is giving the user the ability to manually control the blinds. Two options initially came to mind for doing this: making a slider on the webpage or using a potentiometer as a dial that a user would be able to twist. I decided to go with the latter option since users explicitly indicated that the physical twisting was no longer available compared to before the blinds were connected to the robot. Most regular blinds have a wand that twists in order to open or close them. In order to closely match the way the user would have interacted with the blinds to open and close them, I decided a dial that would twist in a similar way to how the wand would have to be twisted, would be the most suitable way for the user to interact with the blinds. A potentiometer is a type of voltage divider. As the user turns the knob, they change the ratio of the voltage between the middle pin and the power and this change is read in as an analog input \cite{Fitzgerald2015Arduino}. The potentiometer also will work well as a dial allowing the user to twist it to the left to close the blinds or twist it to the right to open the blinds and the user can also set the blinds anywhere between 0 and 180 degrees as well.
+
+I first began by adding the potentiometer to the circuit. I added the potentiometer to the breadboard and attached its three prongs to power, ground, and analog port A0 as can be seen in Figure 6. After making this addition to the circuit, my next step was to program the Arduino to move the servo motor to 180 degrees when the potentiometer is twisted to the right and move the servo motor to 0 degrees when the potentiometer is twisted to the left. The servo moves from 0 to 180 degrees, but the potentiometer accepts analog values which are from 0 to 1023, so I scaled the numbers which allowed the potentiometer to successfully move the servo when it is twisted, so it can be used to open and close the blinds.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 6.png}
+    \caption{
+        Arduino circuit with the addition of the potentiometer at the bottom right corner of the breadboard.
+    }
+    \label{fig:fig6}
+\end{figure}
+
+The final step was implementing this in the Arduino code for the project and adding a new mode for the user to select on the webpage. I added another button to the webpage, denoted as “Potentiometer Mode,” for the new mode. I implemented the potentiometer moving the servo into the Arduino code and for it to execute when the user selected the potentiometer mode. At this stage, there are now five modes in total with the addition of the potentiometer mode. Figure 7 shows the webpage by the end of this stage of the project.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 7.png}
+    \caption{
+        Modes section of webpage with buttons for all five modes. 
+    }
+    \label{fig:fig7}
+\end{figure}
+
+\subsection{User Testing Round 2}
+After completing the improvements after the initial round of user testing, I conducted a second round to gauge whether or not I met the user’s needs and what other improvements I could make. The way this was conducted was similar to how the first round of user testing was conducted. I reiterated the goal of the project to the same group and each user was given 10 to 15 minutes to interact with the robot and website and then respond to a series of questions again. The organized responses to these questions can be found in UserTestingAndEvaluation.pdf. The questions are listed below:
+
 \begin{itemize}
-    \item \texttt{document.tex} - The main LaTeX file containing the contents of the document.
-    \item \texttt{oxycomps.sty} - A style file with settings for what the document should look like.
-    \item \texttt{references.bib} - A list of bibliography items.
-    \item Other files containing images, build instructions, etc.
+    \item \texttt What are some of the pain-points of the project so far?
+    \item \texttt What do you like about the project?
+    \item \texttt Are the default thresholds for the sensors adequate or would it be better if the user could customize them?
 \end{itemize}
-Manual compilation of these files is somewhat esoteric, as it requires multiple uses of the \texttt{pdflatex} and \texttt{biblatex} commands.
-Instead, it is much easier to use tools such as \texttt{pdflatex} or \texttt{latexmk} (in the terminal) or Overleaf (online) for compilation.
-We have also provided a \texttt{Makefile} which will automatically update the document as necessary; the use of makefiles is beyond the scope of this document, but see \textcite{Lambert2021MakefileTutorial}.
 
-\begin{comment}
-No definition citations, unless the term itself is in dispute
-Separate problem background from technical background
-    Unclear if games and apps require much technical background
-    The general structure of the framework might be better suited for the Architecture Overview section
-        Eg. Flask uses decorators to associate functions with URLs
-        Eg. Unity has scripts associated with objects and specific triggers, such as walking into an area, pressing a button, etc.
-    Maybe a better name is "algorithmic background"?
-        Should explore what does and doesn't count
-            All ML counts
-            App and game frameworks do not
-        Framework vs. library?
-            I like the idea of [inversion of control](https://martinfowler.com/bliki/InversionOfControl.html), but that may be too abstract for students to understand
-        Heuristic: is understanding that system necessary to understand the results?
-            Ie. How Flask or Unity works doesn't influence whether the app/game is useful/fun/engaging
-            But how (say) linear regression works is highly relevant for why the results match/don't match the actual values
-\end{comment}
+\subsubsection{What users liked}
+There were a few things users pointed out when it came to things they liked about the project. They liked the availability of different modes to choose from, for the customization of the automation. While most users agreed that the default threshold used for sensing sunlight worked properly all the time, most also agreed that they would like to set their own temperature threshold. So I knew now that I had to add some way for the user to enter their own custom temperature.
 
-\section{The Oxy CS Comps Paper}
-\label{sec:paper}
+\subsubsection{Pain-point: Blinds only completely open or completely close}
+One of the pain points that users highlighted was that the blinds were restricted to opening completely or closing completely. This is because when the blinds are in an automated mode, the servo is only set to move to 0 degrees or 180 degrees, depending on what the sensors perceive in the environment. Users wanted to have the ability to customize the degree to which the blinds would close and open. This is a reasonable issue with the way the project is currently set up because not all users exclusively want to let as much light in as possible or let in the least amount of light possible. Users do often move their blinds to positions that are not necessarily completely open or completely closed.
 
-This section will walk through the different sections of the comps final paper.
-Note that your specific paper may not have all these sections; for example, it is common for app design projects to combine the methods and evaluation sections, to better match the iterative design process.
-Nonetheless, your paper should have all of the \textit{content} described here.
+Additionally, not all blinds are made the same and so 180 degrees on the servo can mean a completely different position for different blinds. This also brought to light that when the user is using the potentiometer mode, where they twist the dial to move the blinds, the status indicator on the webpage will indicate that the blinds are open if the servo angle is 90 degrees or greater and closed if it is less than 90 degrees, which may not be a suitable threshold for every set of blinds. Therefore, a threshold for the degree to which the dial has to be turned for when the blinds will be considered open or closed should also be something that the user should be able to customize as well. 
 
-\subsection{Introduction and Problem Context}
+\subsubsection{Pain-point: No way for user to open or close the blinds directly from the webpage}
+A user also pointed out that there should be an easy way to open or close the blinds directly from the webpage. In the first round of user testing, I identified that the user would want to regain manual control of the blinds so that they can open or close them at their will, but I opted for the option of putting a physical dial instead of a control on the webpage, in order to give the user a more familiar y of interacting with the blinds. However, there are use cases where having the ability to also manually control the blinds from the web page may be useful. One example could be where the user may want to open or close the blinds remotely because the blinds are not within reach, or if the user is remotely monitoring the blinds and wants to also remotely affect them.
 
-This section should motivate why the project is interesting both to you and to the computer science community or the general public.
-You should also justify the difficult of the project.
-As a rough guideline, your project should be either narrow but deep in a subfield of CS, or broadly reaching across subfields without being too shallow.
-It should be comparable to the amount of work/content in an upper-level elective.
+\subsection{Improvements After User Testing Round 2}
+\subsubsection{Adding temperature threshold customizability}
+The first adjustment I made after the second round of user testing was to add a place where the user could enter a number they would like to set for the temperature threshold. I first started by adding an input box on the webpage and a button next to it, where the user could enter the temperature in degrees Fahrenheit and then click on the button to submit the change. This number is held in a variable and this variable  is used in the Arduino code for all of the modes that use temperature: Temperature mode, Temperature or Phototransstor mode, and Temperature and Phototransistor mode.
 
-\subsection{Technical Background}
+\subsubsection{Adding Settings for upper and lower limits and potentiometer threshold}
+My next step was to allow the user to set the limits for the angle the servo should move to when the blinds should be considered closed or opened. I did this in a similar way to how I did the temperature threshold and potentiometer threshold inputs. I created input boxes on the web page with buttons that would allow the user to submit. At this point, there were a lot of input boxes for the user to make adjustments to thresholds and the limits for the servo. Because of this, I decided to consolidate them all into a “Settings” section on the webpage for a better user interface.
 
-This section introduces the technical knowledge necessary to understand your project, including any terminology and algorithms.
-You should assume that the reader is a CS undergraduate like yourself, but not necessarily familiar with AI/ML/HCI/apps/video games/etc.
+It is also important to point out that when a user enters a value in any of these input boxes, that value will be saved regardless of what mode they choose next. In other words, if a user enters 10 for the lower limit and they select the Temperature Mode and then switches to the Phototransistor Mode, this lower limit will remain the same and will not be reset just because the user selected a different mode.
 
-\subsection{Prior Work}
+\subsubsection{Adding buttons to open and close blinds}
+The final adjustment I made after the second round of user testing was to add buttons on the webpage that would allow the user to directly open or close the blinds. This was a straightforward adjustment and I added two buttons, one for “Open” and the other for “Closed” and when each of these was clicked they would send a message to the Arduino to either set the servo to 180 degrees if “Open” was clicked or 0 degrees if “Closed” was clicked. Additionally, if the user set their own upper and lower limits in the Settings section, the servo would use these parameters for the angle to open or close to. Figure 8 shows the webpage after these changes.
 
-This section describes of related and/or existing work.
-This could be scientific or scholarly, but may also be a survey of existing products/games.
-The goal of this section is to put your project in the context of what has already been done.
+\begin{figure}
+    \centering
+    \includegraphics[width=.95\linewidth]{Figure 8.png}
+    \caption{
+        Final webpage UI with status section, quick functions section, modes section, and settings section.
+    }
+    \label{fig:fig8}
+\end{figure}
 
-\subsection{Methods}
+\section{Evaluation Metrics}
+The evaluation of the project consists of two parts. The first part is testing the sensors to make sure they are accurately reading the environment, the selected modes on the webpage are working as intended, and the settings on the webpage are being registered properly.  The second part of the evaluation is very similar to the way the user testing was conducted, by asking a group of individuals a set of questions to assess the extent to which the project fulfilled its goal.
 
-This section describes what exactly you will be working on.
-What are you building? How will it combine/incorporate ideas from the literature? Be specific about what you will be doing: talk about the specific algorithm you will implement/use, the specific dataset/platform/API, and what the outcome of your project will look like.
-All of these decisions should be justified as well.
+\subsection{Closed-door Laboratory Test}
+For the first part of the evaluation, I conducted a closed-door laboratory test on the robot, testing all of the settings and modes, and observed how well the sensors responded to changes in the environment when each of the modes was selected and what the resulting actions were when settings were changed. I chose to do a closed-door laboratory test as opposed to a field test because closed-door laboratory testing enables testers to have greater control over the course of testing, and field testing narrows the gap between the intended usage of the artifact and its actual usage \cite{Tran2016}. Although a field test would have exposed the robot to the actual environment it would be used in, the robot was not ready for this as there would have likely been more mechanical work needed to attach the robot to a set of blinds. Further down the line, with more of the mechanical work being completed in attaching the servo to the wand of a set of blinds, a field test may be called for.
 
+Another reason for conducting this test is that one of the goals of the project is to have an interface between the robot and the webpage, where the data about the robot on the webpage is presented accurately. Another goal of this project is to create a robot that performs actions appropriately based on how a user sets it to be automated and this lab test helps assess this by allowing for a clear understanding of how accurately the sensors are responding to the environment in each mode. The results for this test can be found in UserTestingAndEvaluation.pdf.
 
+I first focused on the sensors and tested the phototransistor first. I tested it out exposing it to direct sunlight to see if it would affect the servo based on that light.  and then also placed it in the window at night, and turned on a porch light. The sensor was only supposed to move the servo to 180 degrees if it sensed sunlight and not when the porch light turned on, as the robot is only supposed to open if sunlight is detected.
 
-\subsection{Evaluation Metrics}
+I next tested out the temperature sensor and set the temperature threshold at different levels, such as 50 degrees and 70 degrees Fahrenheit. I used a fan and heater to change the temperature close to the robot and watched the serial monitor as it listed the temperature that the sensor was reading and watched to make sure that the servo was moving to 0 degrees when the temperature being read on the serial monitor was at or above the threshold I set and moved to 180 degrees when the temperature being read was below the threshold.
 
-This section describes how you will evaluate your project.
-What will you be measuring, and how will you measure it?
-You might think about what would result in an F, a C, or an A for comps.
-Alternately, think about what are the minimal requirements for passing the class, what you might do if you had more time and resources, and what the best case scenario would be if everything went swimmingly.
+I next tested out the modes that had boolean logic applied to them, starting with the Light or Temperature mode. For this mode, the servo should move to 0 degrees if either the temperature was above the threshold or there was no light, otherwise the servo motor should have moved to 180 degrees.
 
-\subsection{Evaluation Results and Discussion}
+I tested out the Light and Temperature mode next. In this mode, the servo should only move to 0 degrees if both light was not shining and the temperature was greater than the threshold.
 
-limitations
+I tested out the potentiometer mode to make sure that it was turning the servo in the appropriate positions and that the threshold for the potentiometer, when set, would change the indication of the blinds being open and closed appropriately on the webpage.
 
-\subsection{Ethical Considerations}
+I finally tested out the lower and upper limit settings in all the modes. I set a lower limit of 20 degrees and an upper limit of 150 degrees and tested these limits in all modes and then I also set a lower limit of 30 and an upper limit of 170 and tested these limits with all of the modes as well.
 
-Are there any ethical concerns that might arise from your project?
-You might think about whether your project perpetuates societal inequity (or could be used by others to do so), whether the data/platforms you are using is collected with informed consent and free of bias, and whether you might be subject to technological solutionism instead of working support/better the public infrastructure.
-Include a discussion of how you plan to mitigate these issues in your project.
+\subsection{User Interviews}
+The second part of the evaluation is a more qualitative assessment. It takes a very similar approach to the way the two rounds of user testing were conducted, asking a set of users questions that help determine the successes and failures of the project. The reason for conducting user interviews is that for HCI projects,they are a great way to gather feedback and measure satisfaction; they are also low cost \cite{Muler2016Designing}. One of the goals of this project is to create a robot that would be compelling for consumers who are interested in automating their blinds, which is why interviewing users who get to test the project is a very useful way of evaluating the project. 
 
-\subsection{Future Work, and Conclusion}
+For the user interviews I wanted to assess how the users felt about the webpage, the features that were offered by the robot, as well as whether or not they felt it accomplished the goal. The organized raw responses of the users can be found in UserTestingAndEvaluation.pdf. Below is the list of the questions that were asked in the user interviews:
 
-\subsection{Timeline}
+\begin{itemize}
+    \item \texttt Is the website easy to use and if not, why?
+    \item \texttt Does the robot offer all the features that you would need for automating blinds and if not, why?
+    \item \texttt Does the robot deliver on its goals?
+    \item \texttt Is this something you would consider using and if not, why?
+\end{itemize}
 
-A timeline of major milestones, with specific items to be completed by specific dates/months.
-Note that this timeline must start over the summer; otherwise you will unlikely have enough time to complete a project of the expected scope.
-As part of the discussion around your timeline, talk about what you already know that would help you with the project, and what you expect to have to learn to be successful.
-Include programming languages, technical concepts, as well as processes (e.g., user testing).
+I would have liked to have been able to conduct testing to see how well closing blinds when the temperature was hot would affect energy consumption. I did not use this approach as it could have been very time-consuming and I did not have the proper equipment to get accurate data measurements of energy consumption.
 
-\subsection{Code Documentation}
+\section{Evaluation Results and Discussion}
+\subsection{Results of Closed-door Laboratory Test}
+For the closed-door laboratory test, almost everything worked exactly how it was supposed to, except for the phototransistor. The temperature mode closed the blinds when a temperature above the threshold was detected. The “Light or Temperature Mode” moved the servo to 0 degrees when either light was not shining on the robot or the temperature was above the temperature threshold, or both and moved to 180 degrees when the temperature was below the temperature threshold and there was no exposure to sunlight. For the potentiometer mode, the webpage accurately indicated when the blinds would have been considered open or closed, when the threshold was changed to 30 degrees and then again when it was changed to 50 degrees. When the upper and lower limits were changed to 10 and 160 respectively, the servo motor moved to the upper and lower limit of 10 and 160 respectively, in all modes.
 
-This section will demonstrate that you have thought through the basics of how your code will work. You should include a diagram of the overall data flow of your program, including what the inputs and outputs of each component will be, and how they will be represented.
+The one mode that had issues was the light mode which uses the phototransistor. I first tested this mode by exposing the robot to sunlight and then shading it from light. When the robot was exposed to the sunlight, the servo moved to 180 degrees and when it was shaded from the light, the servo moved to 0 degrees. This was a good result as this is how it was supposed to perform. The issue arose when it was exposed to a porch light at night and the servo still moved to 180 degrees. The servo was only supposed to move to 180 degrees upon sensing sunlight. This exposed a flaw with the phototransistor in that if any light at all is directed at the robot, it will open the blinds. Because of this, any mode that utilized the phototransistor would not work as expected in certain scenarios, when a light is shining on the robot at night. This showed that the placement of the phototransistor may be an important factor to consider in the future if the design was improved. 
 
-\subsection{Appendices}
+It is important to note that although most things worked as planned, these tests were run in a controlled environment and one of the weaknesses of doing this type of test is that it does not provide the most accurate results because, in the real world, things are more unpredictable \cite{Muler2016Designing}.
 
-\section{Tips and Advice}
+Conducting this test was important because one of the goals of the project is to have an interface between the robot and the webpage, where the data about the robot on the webpage is presented accurately. Another goal of this project is to create a robot that performs actions appropriately based on how a user sets it to be automated and this lab test helps assess this by allowing for a clear understanding of how accurately the sensors are responding to the environment in each mode. The test exposed some issues with the sensors and therefore revealed that the project would not meet the goal of presenting accurate information on the webpage and responding appropriately to stimuli in the environment. 
+
+\subsection{Results of User Interviews}
+For the user interviews portion of the evaluation, I asked questions that would gauge the extent to which the users believed the project succeeded in achieving its goals. 
+
+Three out of the four users indicate that the website was easy to use. This showed that the features and functionality of the website were successful in allowing the user to interact with the robot by setting the modes and settings they desired.
+
+Three users who were interviewed indicated that they would use the robot. Although this question did not  gauge the extent to which the robot achieved its goal, it shined some light on the fact that users felt that the pros outweigh the cons of the robot and they still considered it to potentially be useful for them. 
+
+One user pointed out that they were “dubious about the reliability of the sensors.” This answer aligned well with the results of the closed-door laboratory test and further confirmed that one area where there could be issues for the robot is the reliability of the sensors, and more particularly the phototransistor.
+
+One of the goals that appeared to have clearly not been met when these results were analyzed was the goal of making the robot enhance blinds through automation by turning them into an alarm clock. As two users pointed out, this feature was completely not available besides the blinds opening when the sun rose, to act as a natural alarm in the morning. There was too much of a focus on offering an experience that relied on automation and not enough focus on bringing features that would allow the users to schedule their own times when they could have the blinds open and close. Furthermore, the SwitchBot blinds included this feature and allowed the user to set specific dates and times for the blinds to open and close. In retrospect, I could have spent more time learning from this prior work and followed their example.
+
+Overall, both the laboratory testing as well as the user interviews showed that to a degree, the project was successful in automating the blinds to open and close in response to temperature and light and it gave users desired customizability. One area where the project fell short was the reliability of the phototransistor. This reliability issue revealed that there are still some improvements that could be made with respect to the design of the sensors on the robot because the sensor would respond to any light that was shined on it and not just sunlight. There’s no clear way of distinguishing between sunlight and other forms of light using a phototransistor, but there are likely ways to fix this issue by positioning the phototransistor in an area where direct sunlight can hit it and no other light. Another area where the project fell short is in offering the ability to work as an alarm. The robot automated the blinds to open when the sun rose, which would have acted as an alarm. However, users clearly would have rather been able to set their own schedule for an alarm, because this is the way they use alarms. Not everyone is going to want to use an alarm that wakes them up when the sun rises. 
+
+\section{Ethical Considerations}
+
+\section{Future Work and Conclusion}
 
 \printbibliography
 

@@ -699,6 +699,12 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 OUTPUT /Users/maryobotros/Desktop/Comps-Paper/document.bcf
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.bbl
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.bbl
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.bbl
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.bbl
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.bbl
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.bbl
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -755,8 +761,18 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-OUTPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
 OUTPUT /Users/maryobotros/Desktop/Comps-Paper/document.pdf
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
+OUTPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
@@ -792,7 +808,6 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -804,8 +819,6 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmb.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 1.png
@@ -813,16 +826,52 @@ INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 1.png
 INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 1.png
 INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 1.png
 INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 1.png
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omspcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omspcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omspcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/omspcr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 2.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 2.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 2.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 2.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 2.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 3.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 3.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 3.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 3.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 3.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 4.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 4.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 4.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 4.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 4.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 5.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 5.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 5.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 5.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 5.png
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 6.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 6.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 6.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 6.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 6.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 7.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 7.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 7.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 7.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 7.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 8.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 8.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 8.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 8.png
+INPUT /Users/maryobotros/Desktop/Comps-Paper/Figure 8.png
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr8c.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -831,25 +880,16 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/courier/pcrr8c.vf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /Users/maryobotros/Desktop/Comps-Paper/document.aux
 INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
 INPUT /Users/maryobotros/Desktop/Comps-Paper/document.out
 INPUT /Users/maryobotros/Desktop/Comps-Paper/document.run.xml
 OUTPUT /Users/maryobotros/Desktop/Comps-Paper/document.run.xml
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
