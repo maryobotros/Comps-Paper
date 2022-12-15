@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber document"] 1671130743 "document.bcf" "document.bbl" "document" 1671132447
-  "document.bcf" 1671132447 109311 e3a9731beecb6db8fdd4a4980a865852 "pdflatex"
+["biber document"] 1671133813 "document.bcf" "document.bbl" "document" 1671134429
+  "document.bcf" 1671134428 109240 326795ed8bf8065757cb09146ff02e70 "pdflatex"
   "references.bib" 1671130676 3726 f92e986bf1503bce9d0fda1bf29197cd ""
   (generated)
-  "document.blg"
   "document.bbl"
-["pdflatex"] 1671132444 "/Users/maryobotros/Desktop/Comps-Paper/document.tex" "/Users/maryobotros/Desktop/Comps-Paper/document.pdf" "document" 1671132447
-  "/Users/maryobotros/Desktop/Comps-Paper/document.aux" 1671132447 17140 897dba501addd3d0d5559fcdbb29c464 ""
-  "/Users/maryobotros/Desktop/Comps-Paper/document.tex" 1671132442 59909 348232202b691505b5415f9cd5463fb9 ""
+  "document.blg"
+["pdflatex"] 1671134424 "/Users/maryobotros/Desktop/Comps-Paper/document.tex" "/Users/maryobotros/Desktop/Comps-Paper/document.pdf" "document" 1671134429
+  "/Users/maryobotros/Desktop/Comps-Paper/document.aux" 1671134428 17046 bf4c40268b23bb6643a831ef1c7eeb48 ""
+  "/Users/maryobotros/Desktop/Comps-Paper/document.tex" 1671134422 59294 69007d767417e74701c96b96642e6aa5 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -146,18 +146,18 @@
   "Figure 6.png" 1671088293 85593 57b8171356e76df6febd9cd2f7b5b764 ""
   "Figure 7.png" 1671089650 32273 89108520a41315ae50ec060156ff642c ""
   "Figure 8.png" 1671089633 131583 f90ff584baa13368205f931a1a686ee4 ""
-  "document.aux" 1671132447 17140 897dba501addd3d0d5559fcdbb29c464 "pdflatex"
-  "document.bbl" 1671130746 19742 8a7a2f64a0af66b9030fbc93d7dd3272 "biber document"
-  "document.out" 1671132447 8708 0ef38ec8b685a7529447a67c99dc3164 "pdflatex"
-  "document.run.xml" 1671132447 2333 a755dca3b7eb3f1fc4dc3636b0169f59 "pdflatex"
-  "document.tex" 1671132442 59909 348232202b691505b5415f9cd5463fb9 ""
+  "document.aux" 1671134428 17046 bf4c40268b23bb6643a831ef1c7eeb48 "pdflatex"
+  "document.bbl" 1671133816 19742 8a7a2f64a0af66b9030fbc93d7dd3272 "biber document"
+  "document.out" 1671134428 8708 0ef38ec8b685a7529447a67c99dc3164 "pdflatex"
+  "document.run.xml" 1671134428 2333 a755dca3b7eb3f1fc4dc3636b0169f59 "pdflatex"
+  "document.tex" 1671134422 59294 69007d767417e74701c96b96642e6aa5 ""
   "oxycomps.sty" 1666490323 3008 5d94b493cca39f6ce4cc78f70e3437ef ""
   (generated)
-  "/Users/maryobotros/Desktop/Comps-Paper/document.pdf"
-  "/Users/maryobotros/Desktop/Comps-Paper/document.log"
   "document.aux"
-  "document.log"
-  "document.run.xml"
-  "document.bcf"
   "document.out"
+  "/Users/maryobotros/Desktop/Comps-Paper/document.log"
+  "/Users/maryobotros/Desktop/Comps-Paper/document.pdf"
+  "document.run.xml"
+  "document.log"
+  "document.bcf"
   "document.pdf"
